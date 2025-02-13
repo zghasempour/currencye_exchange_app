@@ -51,7 +51,8 @@ class CurrencyViewModel : ViewModel(){
         userBalance[to] = newToBalance
         conversionCount++
 
-        return ""
+        return "You converted $amount $from to ${"%.2f".format(convertedAmount)} $to." +
+                " Commission Fee : ${"%.2f".format(commission)} $from."
     }
 }
 
