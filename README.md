@@ -6,21 +6,21 @@ This is a Kotlin-based Android application that allows users to exchange currenc
 
 Features 🚀
 
-✅ Multi-currency support - Convert any currency using real-time rates.
-✅ Live Exchange Rates - Updates rates every 5 seconds using a public API.
-✅ Balance Management - Users cannot have a negative balance.
-✅ Commission Fee System - The first 5 exchanges are free, after which a 0.7% fee applies.
-✅ Jetpack Compose UI - Modern UI for better performance and flexibility.
+	✅ Multi-currency support - Convert any currency using real-time rates.
+	✅ Live Exchange Rates - Updates rates every 5 seconds using a public API.
+	✅ Balance Management - Users cannot have a negative balance.
+	✅ Commission Fee System - The first 5 exchanges are free, after which a 0.7% fee applies.
+	✅ Jetpack Compose UI - Modern UI for better performance and flexibility.
 _________________________________________________________________________________________________________________
 How It Works 🔄
-	1.	Starting Balance: The user starts with 1000 EUR.
-	2.	Currency Exchange:
-	•	User enters the amount to exchange.
-	•	Selects the currency to sell and currency to buy.
-	•	Clicks Submit to process the transaction.
-	3.	Balance Update: The system checks if the user has enough balance before converting.
-	4.	Commission Fee: After 5 exchanges, a 0.7% fee is applied and deducted separately.
-	5.	User Notification: A message shows the converted amount, updated balance, and any commission fee.
+		1.	Starting Balance: The user starts with 1000 EUR.
+		2.	Currency Exchange:
+			•	User enters the amount to exchange.
+			•	Selects the currency to sell and currency to buy.
+			•	Clicks Submit to process the transaction.
+		3.	Balance Update: The system checks if the user has enough balance before converting.
+		4.	Commission Fee: After 5 exchanges, a 0.7% fee is applied and deducted separately.
+		5.	User Notification: A message shows the converted amount, updated balance, and any commission fee.
 _________________________________________________________________________________________________________________
 Technology Stack 🛠
 	•	Language: Kotlin
