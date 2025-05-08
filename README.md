@@ -88,3 +88,6 @@ Error: Not enough balance to complete this exchange.
 
 Error: Failed to fetch exchange rates. Please try again.
 
+![image](https://github.com/user-attachments/assets/b78fae93-2e1a-4e97-9755-a065472ad927)
+
+
