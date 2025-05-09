@@ -13,8 +13,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-/.idea/deploymentTargetSelector.xml
-/.idea/gradle.xml
-/.idea/other.xml
-/.idea/inspectionProfiles/
-/.idea/vcs.xml

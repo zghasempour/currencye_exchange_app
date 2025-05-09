@@ -8,9 +8,9 @@ import kotlinx.coroutines.launch
 class CurrencyViewModel : ViewModel(){
     var rates: Map<String,Double> = emptyMap()
     var userBalance: MutableMap<String, Double> = mutableMapOf("EUR" to 1000.0)
-    var conversionCount = 0
-    val freeConversions = 5
-    val commissionRate = 0.007
+    private var conversionCount = 0
+    private val freeConversions = 5
+    private val commissionRate = 0.007
 
     init {
         fetchExchangeRates()
@@ -34,8 +34,7 @@ class CurrencyViewModel : ViewModel(){
         if ((userBalance[from] ?: 0.0) < amount)
             return "Insufficient Balance!"
 
-        val rate = rates[to]!! / rates[from]!!
-        val convertedAmount = amount * rate
+        val convertedAmount = converter(amount, from, to)
 
         var commission = 0.0
         if (conversionCount >= freeConversions)
@@ -53,6 +52,12 @@ class CurrencyViewModel : ViewModel(){
 
         return "You converted $amount $from to ${"%.2f".format(convertedAmount)} $to." +
                 " Commission Fee : ${"%.2f".format(commission)} $from."
+    }
+
+    fun converter(amount: Double, from : String, to :String): Double {
+        val rate = rates[to]!! / rates[from]!!
+        val convertedAmount = amount * rate
+        return convertedAmount
     }
 }
 
